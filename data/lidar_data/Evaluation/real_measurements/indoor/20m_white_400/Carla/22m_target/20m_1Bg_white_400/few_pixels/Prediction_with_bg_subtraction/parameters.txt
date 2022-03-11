@@ -1,0 +1,13 @@
+Data from the most recent generator run: 
+----------------------------------------------------- 
+Scenario: 
+onePixel
+22m_adjusted
+allExact22mPixels_12938.txt
+----------------------------------------------------- 
+Chosen background light rate:    2MHz
+Chosen laser rate:               10MHz
+Chosen neural net type:          Prediction
+Duration for histogram creation: 0:00:04 (h:mm:ss)
+Used memory for histogram:       0.006 MB
+Number of points in point cloud: 4
