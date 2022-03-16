@@ -274,10 +274,15 @@ def predict_Histograms(raw_histograms,
                                                                background=False)
        
 
+
     true_labels = label_true_distances(true_distances, borders)
     
     probabilities, probability_prediction_time = probability_prediction(peaks, modelpath)
-    
+
+    # Saving probabilities and indices for OTSU evaluation
+    np.savetxt(r'data\lidar_data\probabilities.txt', probabilities, fmt='%.4f')
+    np.savetxt(r'data\lidar_data\indices.txt', indices, fmt='%.4f')
+
     if neighbour_weighting:
         peaks, weighting_time = weight_pixel_peaks(peaks,
                                                    indices,
